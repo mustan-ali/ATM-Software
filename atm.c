@@ -33,7 +33,7 @@ int main()
     {
         mainMenu();
 
-        printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
+        printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
         printf("Your Selection:\t");
         scanf("%d", &option);
 
@@ -68,7 +68,7 @@ int main()
             break;
         }
 
-        printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+        printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
         printf("Would you like to do another transaction:\n[1] Yes\n[2] No\n");
         scanf("%d", &choose);
 
@@ -88,8 +88,8 @@ int main()
 
 void mainMenu()
 {
-    printf("***************Welcome to ATM***************\n\n");
-    printf("****Please choose one of the options below****\n\n");
+    printf("***************Welcome to ATM***************\n");
+    printf("***Please choose one of the options below***\n\n");
     printf(" [1]  Check Balance\n");
     printf(" [2]  Deposit\n");
     printf(" [3]  Withdraw\n");
@@ -289,7 +289,7 @@ int billPayment(balance)
 int atmPin()
 {
     char pin[4]= {"0000"};
-    char pass[40];
+    char pass[5];
     int correct=0;
     printf("Enter four digit pin:\n");
 
@@ -303,13 +303,14 @@ int atmPin()
                 correct++;
             }
         }
-        if(correct==4 )
+        if(correct==4)
         {
             system("CLS");
             printf("Correct Pin!");
         }
         else
         {
+            correct=0;
             system("CLS");
             printf("Wrong Pin! Try again:\n");
         }
