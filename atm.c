@@ -165,12 +165,12 @@ int moneyTransfer(int balance)
     {
         printf("Enter 6 digit Account Number to Transfer Money\n");
         scanf("%d", &transferAccount);
-        if (transferAccount >999999 || transferAccount <100000)
+        if (transferAccount > 999999 || transferAccount < 100000)
         {
             printf("\nInvalid account number please enter again!\n");
         }
     }
-    while(transferAccount >999999 || transferAccount <100000);
+    while(transferAccount > 999999 || transferAccount < 100000);
 
     while (back)
     {
@@ -190,7 +190,7 @@ int moneyTransfer(int balance)
         {
             printf("\n+++You don't have enough money+++\n");
             printf("Please contact to your Bank Customer Services\n");
-            printf("****Your Balance is:   $%d\n\n", balance);
+            printf("Your Balance is:   $%d\n\n", balance);
 
         }
     }
@@ -289,7 +289,7 @@ int billPayment(balance)
 int atmPin()
 {
     char pin[4]= {"0000"};
-    char pass[50];
+    char pass[40];
     int correct=0;
     printf("Enter four digit pin:\n");
 
@@ -330,5 +330,3 @@ void errorMessage()
 {
     printf("\t\tERROR\n!!!You selected an invalid number!!!\n");
 }
-
-
