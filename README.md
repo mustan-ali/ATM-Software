@@ -1,4 +1,8 @@
 # Fundamental-of-Programming-Project
+
+CSC 1103 Fundamentals of Programming  
+CSCL 1103 Lab - Fundamentals of Programming  
+
 ATM Machine System  
 
 Features  
