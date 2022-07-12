@@ -3,7 +3,7 @@
 CSC 1103 Fundamentals of Programming  
 CSCL 1103 Lab - Fundamentals of Programming  
 
-ATM Machine System  
+ATM Machine Software  
 
 Features  
 1# PIN  
