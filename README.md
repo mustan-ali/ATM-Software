@@ -1,15 +1,6 @@
-# Fundamental-of-Programming-Project
+# ATM-Software
 
 CSC 1103 Fundamentals of Programming  
 CSCL 1103 Lab - Fundamentals of Programming  
 
-ATM Machine Software  
-
-Features  
-1# PIN  
-2# Check Balance  
-3# Money Deposit  
-4# Money Withdraw  
-5# Money Transfer  
-6# Bill Payment  
-7# Exit  
+This program is a banking system that requires users to enter a PIN to access their account. Once the correct PIN is entered, users can perform various actions. They can check their account balance, deposit money, withdraw money, transfer money to another account, and pay bills. The program validates inputs and provides prompts for users to continue or exit after each action.
